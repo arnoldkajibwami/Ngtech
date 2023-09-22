@@ -1,0 +1,223 @@
+.carousel-caption{
+  position: absolute !important;
+  top:47% !important;
+  left:35% !important;
+  transform: translate(-50%, -50%) !important;
+  padding: 10px !important;
+  color: black !important;
+  text-align: left;
+  margin-top:20px;
+}
+
+.imageslider{
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  /* -o-object-fit: cover;
+  -o-object-position: center; */
+}
+@media (max-width:800px){
+  .text{
+    flex-wrap: wrap;
+  }
+  .carousel-caption{
+    width:80%;
+    top:45% !important;
+    left: 53% !important;
+    /* transform: translateX(60%); */
+  }
+
+  .imageslider{
+    height: 95vh;
+  }
+}
+.tocenter h5{
+  font-size: 40px;
+}
+
+.carousel-indicators{
+  display: none;
+}
+
+#phonelink {
+  color: rgb(32, 32, 32) !important;
+  text-decoration: none !important;
+  font-size: 17px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+.card {
+  width: 300px;
+  height: 380px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 15px 15px 20px #bebebe,
+             -15px -15px 20px #ffffff;
+  transition: 0.2s ease-in-out;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#cardblog{
+    height: 160px;
+    width: 160px;
+    text-align: center;
+}
+
+#postlink{
+  text-decoration: none;
+}
+
+#postlink:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.img {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: linear-gradient(#e66465, #9198e5);
+  display: flex;
+  align-items: top;
+  justify-content: right;
+}
+
+.text {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.texts{
+  margin:20px;
+  display: block;
+  align-items: space-around;
+}
+
+.text .h3 {
+  font-family: 'Lucida Sans' sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+}
+
+.text .p {
+  font-family: 'Lucida Sans' sans-serif;
+  color: #999999;
+  font-size: 13px;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+.RowCol{
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+/* .allBlogs{
+  display: grid;
+  grid-template-columns: 80% 20%;
+} */
+.cardblogs{
+  /* position: fixed;
+  left:80%; */
+  display: none;
+}
+/* @media (max-width:850px){
+  .cardblogs{
+    display: none;
+  }
+} */
+
+.cardservice {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 13px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+}
+
+
+.ServiceHeading {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: rgb(26, 26, 26);
+}
+
+.ServiceDescription {
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(99, 99, 99);
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.moreButton {
+  width: 80px;
+  height: 30px;
+  background-color: #7b57ff;
+  transition-duration: .2s;
+  border: none;
+  color: rgb(241, 241, 241);
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.morebtn{
+  background-color: #7b57ff !important;
+  color: white;
+}
+.contactbtn{
+  background-color: rgb(218, 218, 218) !important;
+}
+.hireButton {
+  width: 80px;
+  height: 30px;
+  background-color: rgb(218, 218, 218);
+  transition-duration: .2s;
+  color: rgb(46, 46, 46);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.hireButton:hover {
+  background-color: #ebebeb;
+  transition-duration: .2s;
+}
+
+.moreButton:hover {
+  background-color: #9173ff;
+  transition-duration: .2s;
+}
+.servicesAll{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

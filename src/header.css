@@ -17,7 +17,23 @@
 
 .loremfont {
     position: relative;
-    top: 10%;
+    top: 15%;
+}
+
+@media(max-width:800px) {
+    .loremfont {
+        position: relative;
+        top: 13%;
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width:400px) {
+    .loremfont {
+        position: relative;
+        top: 10%;
+        margin-bottom: 40px;
+    }
 }
 
 .loremfont p {
@@ -45,6 +61,7 @@
 .logo h4 {
     color: rgb(37, 37, 37);
     /* text-shadow: 1px 1px px rgb(37, 37, 37); */
+    text-shadow: -1px 1px 0px black;
     font-size: 25px;
     z-index: 1;
 }
@@ -59,7 +76,7 @@
     display: block;
     /* background-color: #ffffff; */
     background-color: #000000;
-    box-shadow: 4px 4px 10px rgba(207, 207, 207, 0.6);
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.6);
     height: 3px;
     width: 25px;
     position: relative;
@@ -201,11 +218,8 @@
         right: 0;
         top: 0 !important;
         transform: translateY(-10px);
-        /* background-color: #999999; */
         background-color: white;
-        box-shadow: -2px -2px 5px #6d6c6c !important;
-        /* box-shadow: 4px 4px 6px #b4b9f0 !important; */
-        /* backdrop-filter: blur(50px); */
+        
         border-radius: 8px;
         width: 0px;
         height: 101vh;
@@ -228,8 +242,9 @@
         text-align: center !important;
         font-size: large !important;
     }
-    hr{
-        margin-top:40px ;
+
+    hr {
+        margin-top: 40px;
     }
 
     .nav-elements li label select option {

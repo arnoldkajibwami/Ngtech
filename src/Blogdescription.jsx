@@ -14,7 +14,7 @@ export default function Blogdescription() {
 
     return (
         <>
-            <div style={{ backgroundImage: `url(${selectedData.image})`, height: "40vh" }} className="text-center contactbg blogbg  mb-4">
+            <div style={{ backgroundImage: `url(${selectedData.image})`, height: "40vh" }} className="text-center mb-4 imgblogbg">
                 <p className="titledesc" style={{
                     position: "relative", top: "45%",
                     fontSize: "xx-large", color: "black", textShadow: "-1px 1px 0px black"

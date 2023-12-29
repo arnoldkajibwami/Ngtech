@@ -6,8 +6,8 @@ import Dataitems from './Dataitems';
 export default function Blog() {
     return (
         <>
-            <div style={{ height: "40vh" }} className="text-center contactbg blogbg  mb-4">
-                <h1 id='blogcontact'>Blog</h1>
+            <div style={{ height: "40vh" }} className="text-center blogbg  mb-4">
+                <h1 id='blogcontact' >Blog</h1>
             </div>
 
             {/* <section className='container d-flex blogcontainer'>

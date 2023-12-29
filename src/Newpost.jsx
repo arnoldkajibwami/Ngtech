@@ -2,8 +2,8 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Data from "./Data";
-import Items from "./Items";
 import { Link } from "react-router-dom";
+import Itemsblogcarousel from "./Itemsblogcarousel";
 
 
 const Newpost = () => {
@@ -38,7 +38,7 @@ const Newpost = () => {
                         <>
                             <div className="mb-1 ">
                                 <Link to={`/item/${item.id}`}>
-                                    <Items
+                                    <Itemsblogcarousel
                                         image={item.image}
                                         descriptions={item.descriptions}
                                         // description={item.description}

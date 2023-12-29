@@ -15,26 +15,10 @@
     height: 30vh;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background: linear-gradient(#e66465, #9198e5);
+    /* background: linear-gradient(#e66465, #9198e5); */
     display: flex;
     align-items: top;
     justify-content: right;
-}
-
-.imagesss3 {
-    background-image: url(./images/4.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.imagesss2 {
-    background-image: url(./images/6.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.imagesss1 {
-    background-image: url(./images/home.jpg);
     background-size: cover;
     background-position: center;
 }

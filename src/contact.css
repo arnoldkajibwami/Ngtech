@@ -96,11 +96,14 @@ label.error {
 }
 
 .contactusbg {
-  background-image: url(./images/6.jpg);
+  background-image: url(./images/contactbg.jpg);
+  /* background-image: url(./images/contactbg1.jpg); */
   background-size: cover;
-  background-position: 10%;
+  background-position: center;
 }
-
+.aboutbg{ 
+  background-image: url(./images/4.jpg);
+}
 #blogcontact{
   padding-top:120px;
 }

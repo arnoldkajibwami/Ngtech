@@ -8,7 +8,7 @@ export default function Categoryall() {
             <section>
                 <section className="homeSection2">
 
-                    <div className="SearchForm">
+                    <div className="SearchForm SearchForm2" >
                         <form>
                             <div className="searchForm loremfont text-center">
                                 <p><span style={{ fontWeight: "bold" }}>Find</span> A Job</p>

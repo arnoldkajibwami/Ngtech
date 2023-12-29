@@ -1,51 +1,36 @@
-import React from 'react';
-import Image1 from './images/2.png'
-import { useTimer } from 'react-timer-hook';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from './Header';
+import Home from './Home';
+import Blog from './Blog';
+import Login from './Login';
+import Contact from './Contact';
+import Footer from './Footer';
+import About from './About';
+import PostJob from './PostJob';
+import SignUp from './Signup';
+import Categoryall from './Category';
+import Blogdescription from "./Blogdescription";
 
-function MyTimer({ expiryTimestamp }) {
-  const {
-    totalSeconds,
-    seconds,
-    minutes,
-    hours,
-    days,
-    isRunning,
-    start,
-    pause,
-    resume,
-    restart,
-  } = useTimer({ expiryTimestamp, onExpire: () => console.warn('onExpire called') });
-
+function App() {
 
   return (
-    <div style={{textAlign: 'center'}}>
-      <h1>Comming Soon</h1>
-      <p>Ng Tech</p>
-      <img id="imagebg" src= {Image1} alt='logo'/>
-      <div style={{fontSize: '80px'}}>
-        <span>{days}</span>:<span>{hours}</span>:<span>{minutes}</span>:
-        <span>{seconds}</span>
-      </div>
-      {/* <p>{isRunning ? 'Running' : 'Not running'}</p> */}
-      {/* <button onClick={start}>Start</button>
-      <button onClick={pause}>Pause</button>
-      <button onClick={resume}>Resume</button> */}
-      {/* <button onClick={() => {
-        // Restarts to 5 minutes timer
-        const time = new Date();
-        time.setSeconds(time.getSeconds() + 300);
-        restart(time)
-      }}>Restart</button> */}
-    </div>
-  );
+    <Router>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/home" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/item/:id" element={<Blogdescription />} />
+        <Route path="/postjob" element={<PostJob />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/category" element={<Categoryall/>} />
+      </Routes>
+      <Footer/>
+    </Router>
+  )
 }
 
-export default function App() {
-  const time = new Date();
-  time.setSeconds(time.getSeconds() + 5250000); // 90 days timer
-  return (
-    <div style={{marginTop:"150px"}}>
-      <MyTimer expiryTimestamp={time} />
-    </div>
-  );
-}
+export default App

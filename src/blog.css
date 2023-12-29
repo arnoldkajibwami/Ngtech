@@ -1,0 +1,50 @@
+.blogcontainer{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.blogcard{
+    width: 300px;
+    margin: 20px;
+}
+.imagesss2{
+    background-image: url(./images/6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imagesss1{
+    background-image: url(./images/home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.blogbg{
+    background-image: url(./images/4.jpg);
+    background-size: cover;
+    background-position: 10%;
+}
+#blogcontact{
+    padding-top:120px;
+}
+
+@media(max-width:400px){
+    #blogcontact{
+        padding-top:150px !important;
+    }
+}
+
+@media(max-width:800px) {
+    .blogcard{
+        width: 90%;
+        margin: 20px;
+    }
+}
+@media(max-width:760px) {
+    .blogcard{
+        width: 90%;
+        margin: 20px;
+    }
+}
+
+.socialicons{
+    height: 7vh !important;
+    width: 7vh !important;
+}
